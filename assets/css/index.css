@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+
+    /**
+     * colors
+     */
+
+    --middle-blue-green: hsl(176, 35%, 63%);
+    --sonic-silver: hsl(0, 0%, 44%);
+    --eerie-black: hsl(0, 0%, 9%);
+    --ocean-green: hsl(148, 45%, 58%);
+    --candy-pink: hsl(356, 65%, 63%);
+    --cultured: hsl(0, 0%, 96%);
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 0%);
+
+    /**
+     * typography
+     */
+
+    --ff-jost: "Jost", sans-serif;
+
+    --fs-1: 2.5rem;
+    --fs-2: 1.75rem;
+    --fs-3: 1.625rem;
+    --fs-4: 1.5rem;
+    --fs-5: 1.375rem;
+    --fs-6: 1.25rem;
+    --fs-7: 1.125rem;
+    --fs-8: 0.938rem;
+    --fs-9: 0.875rem;
+    --fs-10: 0.813rem;
+
+    --fw-500: 500;
+    --fw-600: 600;
+
+    /**
+     * transition
+     */
+
+    --transition-1: 0.25s ease;
+    --transition-2: 0.75s ease;
+    --cubic-out: cubic-bezier(0.51, 0.03, 0.64, 0.28);
+    --cubic-in: cubic-bezier(0.33, 0.85, 0.56, 1.02);
+
+    /**
+     * spacing
+     */
+
+    --section-padding: 60px;
+
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lato', sans-serif;
+}
+
+
+input {
+    float: right;
+    height: 30px;
+    color: black;
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 4px rgb(255, 255, 255);
+    width: 500px;
+
+}
+
+/* Styles for main container */
+.showDataMain {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Styles for item container */
+.items {
+    overflow: hidden;
+    width: 200px;
+    height: 240px;
+    position: relative;
+    border-radius: 10px;
+}
+
+/* Styles for item image */
+.img {
+    width: 100%;
+    height: 55%;
+    object-fit: cover;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--sonic-silver);
+    transition: transform 0.2s ease-in-out;
+    overflow: hidden;
+}
+
+/* Styles for item image when hovered */
+.img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+
+/* Styles for item title */
+.titleText {
+    font-size: 15px;
+    margin: 10px 0px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--black);
+}
+
+/* Styles for item price and category */
+.price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 15px;
+    margin: 10px 0px;
+    line-height: 10%;
+}
+
+.originalPrice {
+    color: var(--candy-pink);
+    font-weight: bold;
+}
+
+.discountPercentage {
+    position: absolute;
+    margin-top: -105px;
+    margin-left: 5px;
+    padding: 10px 12px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    font-size: 10px;
+    backdrop-filter: blur(10px);
+}
+
+.discountPercentage b{
+    font-weight: bolder;
+}
+.category {
+    font-size: 11px;
+}
+
+.categoryText {
+    color: rgb(175, 175, 175);
+}
+
+/* Styles for item link */
+
+
+.link {
+    color: var(--white);
+    background-color: var(--black);
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.link:hover {
+    background-color: var(--white);
+    color: var(--black);
+    border: 1px solid var(--black);
+    font-size: 11px;
+}
+
+/* Styles for item rating */
+.rating {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+    font-size: 1.2rem;
+    color: #e1306c;
+    font-weight: bold;
+}
+
+/* Styles for search bar */
+
+
+.errorDiv {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.errorHeading {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+
